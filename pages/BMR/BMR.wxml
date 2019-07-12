@@ -1,0 +1,70 @@
+<!--BMR.wxml-->
+<view class="container">
+  <view class="input-container">
+    <view class="item">
+      <text class="label">性别</text>
+      <radio-group class="radio-group" bindchange="radioChange">
+        <label class="radio" wx:for="{{sexs}}">
+          <radio value="{{item.name}}" checked="{{item.checked}}" />
+          <text class="radio-label">{{item.value}}</text>
+        </label>
+      </radio-group>
+    </view>
+    <view class="item">
+      <text class="label">年龄</text>
+      <text class="unit">岁</text>
+      <input type="digit" bindinput="bindKeyAgeInput" maxlength="6" class="" />
+    </view>
+    <view class="item">
+      <text class="label">身高</text>
+      <text class="unit">cm</text>
+      <input type="digit" bindinput="bindKeyHeightInput" maxlength="6" class="" />
+    </view>
+    <view class="item">
+      <text class="label">体重</text>
+      <text class="unit">kg</text>
+      <input type="digit" bindinput="bindKeyWeightInput" maxlength="6" class="" />
+    </view>
+    <button class="calcu_btn" bindtap="calculateBtn">开始计算</button>
+  </view>
+
+  <view class="result">
+    <view class="title">BMR（基础代谢率）</view>
+    <view class="score">{{score}}</view>
+    <view class="tip">
+      基础代谢率（ Basal Metabolism Rate，BMR ）是指人体在清醒而又极端安静的状态下，不受肌肉活动、环境温度、食物及精神紧张等影响时的能量代谢率。
+    </view>
+  </view>
+
+  <view class="standard">
+    <view class="compatable">
+      <view class="table">
+        <view class="row thead">
+          <text class="col">年龄</text>
+          <text class="col">男</text>
+          <text class="col">女</text>
+        </view>
+        <view class="row">
+          <text class="col">18~29岁</text>
+          <text class="col">1650</text>
+          <text class="col">1310</text>
+        </view>
+        <view class="row">
+          <text class="col">30~49岁</text>
+          <text class="col">1600</text>
+          <text class="col">1270</text>
+        </view>
+        <view class="row">
+          <text class="col">50~69岁</text>
+          <text class="col">1450</text>
+          <text class="col">1210</text>
+        </view>
+        <view class="row">
+          <text class="col">70岁以上</text>
+          <text class="col">1320</text>
+          <text class="col">1110</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

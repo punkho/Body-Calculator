@@ -1,0 +1,161 @@
+/**BMR.wxss**/
+
+.container {
+  position: absolute;
+  padding: 15rpx;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(#90f7ce, #fff);
+}
+
+/** input **/
+
+.input-container {
+  margin: 30rpx 20rpx 15rpx 20rpx;
+  border-radius: 20rpx;
+  background: linear-gradient(to bottom right, #17de8e, #0a6);
+  text-shadow: 5rpx 5rpx 20rpx #555;
+  box-shadow: 1rpx 1rpx 50rpx #aaa;
+}
+
+.radio-label {
+  margin: 0 100rpx 0 20rpx;
+}
+
+.item {
+  height: 50rpx;
+  font-size: 35rpx;
+  padding: 30rpx 50rpx;
+  color: #fff;
+}
+
+.item .label {
+  width: 20%;
+  float: left;
+  vertical-align: middle;
+}
+
+.item input {
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 50rpx;
+  border-radius: 6rpx;
+  background-color: #fff;
+  box-shadow: 5rpx 5rpx 10rpx #888;
+  text-shadow: 0rpx 0rpx 0rpx;
+  text-align: right;
+  padding-right: 10rpx;
+  color: #0a6;
+}
+
+.item .unit {
+  float: right;
+}
+
+.item .type_select {
+  float: right;
+}
+
+.item .type_select text {
+  margin-left: 8rpx;
+}
+
+button::after {
+  border: none;
+}
+
+.calcu_btn {
+  background: linear-gradient(to bottom right, #02b67a, #055c3f);
+  color: #fff;
+  border-radius: 20rpx;
+  border-top-left-radius: 0rpx;
+  border-top-right-radius: 0rpx;
+  font-weight: 400;
+}
+
+/** result **/
+
+.result {
+  margin: 15rpx 20rpx;
+  border-radius: 20rpx;
+  background: linear-gradient(to bottom right, #17de8e, #0a6);
+  text-shadow: 5rpx 5rpx 20rpx #555;
+  box-shadow: 1rpx 1rpx 50rpx #aaa;
+}
+
+.result .title {
+  padding: 0 40rpx;
+  font-size: 40rpx;
+  padding-top: 20rpx;
+  color: #fff;
+  font-weight: 600;
+}
+
+.result .score {
+  padding: 0 40rpx;
+  line-height: 100rpx;
+  font-size: 60rpx;
+  color: #fff;
+}
+
+.tip {
+  color: #f1f1f1;
+  font-size: 24rpx;
+  line-height: 50rpx;
+  border-radius: 20rpx;
+  border-top-left-radius: 0rpx;
+  border-top-right-radius: 0rpx;
+  background: linear-gradient(to bottom right, #02b67a, #055c3f);
+  padding: 20rpx;
+}
+
+/** table **/
+
+.standard {
+  margin: 15rpx 20rpx 28rpx 20rpx;
+  border-radius: 20rpx;
+  background: linear-gradient(to bottom right, #17de8e, #0a6);
+  text-shadow: 5rpx 5rpx 20rpx #555;
+  box-shadow: 1rpx 1rpx 50rpx #aaa;
+}
+
+.compatable {
+  padding: 20rpx;
+  font-size: 28rpx;
+  color: #fff;
+}
+
+.compatable .table-title {
+  line-height: 50rpx;
+  height: 50rpx;
+}
+
+.table {
+  border: 1rpx solid #f4f4f4;
+}
+
+.table .row {
+  display: flex;
+  border-bottom: 1rpx solid #f4f4f4;
+  line-height: 60rpx;
+  height: 60rpx;
+}
+
+.table .row .col {
+  flex: 1;
+  text-align: center;
+  border-right: 1rpx solid #f4f4f4;
+}
+
+.table .thead {
+  background: linear-gradient(to bottom right, #02b67a, #055c3f);
+  color: #fff;
+}
+
+.table .row .col:last-child {
+  border-right: 0;
+}
+
+.table .row:last-child {
+  border-bottom: 0;
+}

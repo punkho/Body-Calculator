@@ -1,0 +1,39 @@
+/**index.wxss**/
+
+.container {
+  position: absolute;
+  padding: 230rpx 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(#90f7ce, #fff);
+}
+
+.item {
+  margin: 15rpx 30rpx;
+  display: flex;
+}
+
+.item-btn {
+  margin: 20rpx;
+  padding: 50rpx;
+  width: 50%;
+  color: #fff;
+  text-shadow: 5rpx 5rpx 10rpx #999;
+  background: linear-gradient(to bottom right, #17de8e, #0a6);
+  box-shadow: 1rpx 1rpx 20rpx #aaa;
+  border-radius: 20rpx;
+}
+
+button::after {
+  border: none;
+}
+
+.label {
+  font-size: 60rpx;
+  line-height: 60rpx;
+  font-weight: 600;
+}
+
+.tip {
+  font-size: 30rpx;
+}

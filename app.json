@@ -1,0 +1,16 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/BMI/BMI",
+    "pages/BMR/BMR",
+    "pages/BFR/BFR",
+    "pages/REE/REE",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#00aa66",
+    "navigationBarTitleText": "身体数据计算器",
+    "navigationBarTextStyle":"#fff"
+  }
+}

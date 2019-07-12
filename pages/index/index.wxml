@@ -1,0 +1,23 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="item">
+    <button class="item-btn" bindtap='bindToBMI'>
+      <text class="label">BMI\n</text>
+      <text class="tip">身体质量指数</text>
+    </button>
+    <button class="item-btn" bindtap='bindToBFR'>
+      <text class="label">BFR\n</text>
+      <text class="tip">体脂率</text>
+    </button>
+  </view>
+  <view class="item">
+    <button class="item-btn" bindtap='bindToBMR'>
+      <text class="label">BMR\n</text>
+      <text class="tip">基础代谢率</text>
+    </button>
+    <button class="item-btn" bindtap='bindToREE'>
+      <text class="label">REE\n</text>
+      <text class="tip">静态能量消耗</text>
+    </button>
+  </view>
+</view>

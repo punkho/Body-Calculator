@@ -1,0 +1,70 @@
+<!--REE.wxml-->
+<view class="container">
+  <view class="input-container">
+    <view class="item">
+      <text class="label">性别</text>
+      <radio-group class="radio-group" bindchange="radioChange">
+        <label class="radio" wx:for="{{sexs}}">
+          <radio value="{{item.name}}" checked="{{item.checked}}" />
+          <text class="radio-label">{{item.value}}</text>
+        </label>
+      </radio-group>
+    </view>
+    <view class="item">
+      <text class="label">年龄</text>
+      <text class="unit">岁</text>
+      <input type="digit" bindinput="bindKeyAgeInput" maxlength="6" class="" />
+    </view>
+    <view class="item">
+      <text class="label">身高</text>
+      <text class="unit">cm</text>
+      <input type="digit" bindinput="bindKeyHeightInput" maxlength="6" class="" />
+    </view>
+    <view class="item">
+      <text class="label">体重</text>
+      <text class="unit">kg</text>
+      <input type="digit" bindinput="bindKeyWeightInput" maxlength="6" class="" />
+    </view>
+    <button class="calcu_btn" bindtap="calculateBtn">开始计算</button>
+  </view>
+
+  <view class="result">
+    <view class="title">REE（静态能量消耗）</view>
+    <view class="score">{{score}}</view>
+    <view class="tip">
+      静态能量消耗（ Resting Energy Expenditure，REE ）是指一般人所需的最小热能需求量。
+    </view>
+  </view>
+
+  <view class="standard">
+    <view class="compatable">
+      <view class="table">
+        <view class="row thead">
+          <text class="col">年龄</text>
+          <text class="col">男</text>
+          <text class="col">女</text>
+        </view>
+        <view class="row">
+          <text class="col">18~29岁</text>
+          <text class="col">1600</text>
+          <text class="col">1240</text>
+        </view>
+        <view class="row">
+          <text class="col">30~49岁</text>
+          <text class="col">1550</text>
+          <text class="col">1200</text>
+        </view>
+        <view class="row">
+          <text class="col">50~69岁</text>
+          <text class="col">1400</text>
+          <text class="col">1140</text>
+        </view>
+        <view class="row">
+          <text class="col">70岁以上</text>
+          <text class="col">1270</text>
+          <text class="col">1070</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
